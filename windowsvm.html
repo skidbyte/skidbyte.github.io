@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+	<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+	
+	</head>
+<head><ul>
+        
+    <b><li><a href="index.html" class="left">MAIN PAGE</a></li> </b>    
+	
+	<b><li><a href="allguides.html"  class="left">GUIDES / TUTORIALS</a></li> </b>
+        
+        <b><li><a href="reviews.html"  class="left">REVIEWS</a></li></b>
+            
+        <b><li><a href="insert page here"  class="left">COMING SOON</a></li></b>
+                
+        
+    <li><a href="contact.html" class="right">CONTACT</a></li>
+	</ul></head>
+<div class="windowsvm">
+	<body>
+<h2>How to Install Windows 10 in a Virtual Machine</h2>
+
+
+
+
+<h3>1. Download the Windows 10 ISO</h3>
+<p>First off, head over to the <a href="https://www.microsoft.com/en-us/software-download/windows10" target="_blank">Windows 10 download page.</a> If you are a Windows user, MS will prompt you to download the Media Creation Tool before allowing you to download an OS image. You can use this tool to create an ISO file locally, or you can follow these <a href="https://www.howtogeek.com/427223/how-to-download-a-windows-10-iso-without-the-media-creation-tool/" target= "_blank">additional instructions </a>if you want to download the ISO manually without being forced to grab the tool first.</p>
+
+
+
+<h3>2. Create a new virtual machine</h3>
+<p>Go to the VirtualBox website, and download the <a href= "https://www.virtualbox.org/wiki/Downloads">latest version</a> of Oracle’s free, open source software. Go through the installation process, and then launch the application. Press the “New” button, and name your virtual machine. Make sure your “Type” is set to “Microsoft Windows,” and your “Version” is set to “Windows 10.” Just make sure you match the x64 version with a 64-bit VM, and the x86 version with a 32-bit VM.</p>
+<img src="http://www.extremetech.com/wp-content/uploads/2015/07/Screen-Shot-2015-07-29-at-8.25.43-PM.png" class="center">
+
+
+<h3>3. Allocate RAM</h3>
+<p>Now, you need to decide how much RAM you want to allocate for this VM. For the x86 version, you’ll need at least 1GB of RAM. For the x64 version, you’ll need 2GB. I have 16GB of RAM in my desktop, so I decided that 4GB was right for my configuration. Whatever you decide, just make sure you stay in the green. If you allocate too much RAM, you’ll end up with serious performance issues.</p>
+<img src="http://www.extremetech.com/wp-content/uploads/2015/07/Screen-Shot-2015-07-29-at-8.27.05-PM.png" class="center">
+	
+
+<h3>4. Create a virtual drive</h3>
+<p>Next, you need to create a virtual drive. Microsoft says that 16GB is the minimum space needed for the 32-bit version, but 20GB is required for the 64-bit version. I decided on a 50GB virtual drive on my desktop, but feel free to make it as large as you need. Just be sure that you have enough space on your actual hard drive to handle the size of your virtual drive. Depending on what you intend to do with the OS, you may want to allocate more or less storage. Applications installed to a VM should be assumed to require the same amount of “real” storage that their standard installations would.</p>
+<img src="http://www.extremetech.com/wp-content/uploads/2015/07/Screen-Shot-2015-07-29-at-8.29.46-PM.png" class="center">
+	
+
+<h3>5. Locate the Windows 10 ISO</h3>
+<p>Now, go into the settings for this virtual machine, and navigate to the “Storage” tab. Click the disc icon with a green plus next to “Controller: SATA.” Click “Choose disk,” and then locate the Windows 10 ISO you downloaded earlier.</p>
+
+
+<h3>6. Configure video settings</h3>
+<p>Before you jump in and start installing Windows 10, move over to the “Display” tab. You can configure how much video memory you’re willing to allocate to the virtual machine, but make sure you stay in the green. You can also toggle on 3D acceleration if you like.</p>
+<img src="http://www.extremetech.com/wp-content/uploads/2015/07/Screen-Shot-2015-07-29-at-8.31.20-PM.png" class="center">
+
+
+<h3>7. Launch the installer</h3>
+<p>With all of that setup finished, press the “Start” button in VirtualBox, and begin the Windows 10 installation process. Follow the instructions on the screen, and you’re well on your way.</p>
+<img src="http://www.extremetech.com/wp-content/uploads/2015/07/Screen-Shot-2015-07-29-at-3.02.17-PM.png" class="center">
+
+
+
+</body>
+	</div>
+</html>
