@@ -142,6 +142,7 @@ div {
 
 .clock {
 		float: right;
+		align-content: right;
 		position: bottom;
 		bottom: 10px;
 }
