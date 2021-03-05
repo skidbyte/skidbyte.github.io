@@ -140,6 +140,11 @@ div {
 	float: left;
 }
 
+.clock {
+		float: left;
+		position: absolute;
+		bottom: 10px;
+}
 .right {
 	float: right;
 	align-content: right;
