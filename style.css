@@ -141,8 +141,8 @@ div {
 }
 
 .clock {
-		float: left;
-		position: absolute;
+		float: right;
+		position: bottom;
 		bottom: 10px;
 }
 .right {
