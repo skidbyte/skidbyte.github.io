@@ -143,8 +143,8 @@ div {
 .clock {
 		float: right;
 		align-content: right;
-		position: bottom;
-		bottom: 10px;
+		text-align: right;
+		
 }
 .right {
 	float: right;
