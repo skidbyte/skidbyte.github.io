@@ -133,6 +133,7 @@ h4 {
 .clock {
 		position: fixed;
 		bottom: 0%;
+		align: right;
 		
 }
 .right {
