@@ -4,44 +4,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<title>Yes</title>
-<script>
-$(function() {
+<title>Coelestium's World</title>
+<script type="text/javascript">
 
-var origTitle, animatedTitle, timer;
+var titleText = document.title;
 
-function animateTitle(newTitle) {
-  var currentState = false;
-  origTitle = document.title;  // save original title
-  animatedTitle = "Hey There! " + origTitle;
-  timer = setInterval(startAnimation, 1000);
+function titleMarquee() {
 
-  function startAnimation() {
-    // animate between the original and the new title
-    document.title = currentState ? origTitle : animatedTitle;
-    currentState = !currentState;
-  }
-}
+ titleText = titleText.substring(1, titleText.length) + titleText.substring(0, 1);
+ document.title = titleText;
+ setTimeout("titleMarquee()", 450);
+ }
 
-function restoreTitle() {
-  clearInterval(timer);
-  document.title = origTitle; // restore original title
-}
-
-// Change page title on blur
-$(window).blur(function() {
-    animateTitle();
-});
-
-// Change page title back on focus
-$(window).focus(function() {
-    restoreTitle();
-});
-
-});
 </script>
-
-
 <head><ul>
         
     <b><li><a href="index.html" class="left">MAIN PAGE</a></li> </b>    
@@ -60,14 +35,14 @@ $(window).focus(function() {
     <h1>Coelestium's World</h1>
 </head>
 
-<body>
+<body onload="titleMarquee()">
     <h2>About this Website</h2>
 	<p>Im a nerd from Switzerland. This website is supposed to be a collective of my knowledge made accesible to anyone willing to learn/read. Here you will find some tutorials, guides, reviews, opinions or anything else I am willing to share. If you would like to contact me, request something, or ask a question you will find everything on my <a href="contact.html" target="_blank">contact</a> page.</p> 
 </body>
 </div>
 <footer>
 <div class="clock right">
-<iframe src="http://free.timeanddate.com/clock/i7piae5b/n3227/fs20/ahr/th1/ta1" frameborder="0" width="126" height="25"></iframe>
+<iframe src="http://free.timeanddate.com/clock/i7piae5b/n3227/fs20/ahr/th1/ta1" frameborder="0" width="175" height="30"></iframe>
 </div>
 </footer>
 
